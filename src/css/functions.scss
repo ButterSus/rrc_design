@@ -1,0 +1,34 @@
+@mixin function-size($width, $height){
+  display: flex;
+  width: $width;
+  height: $height;
+}
+
+@mixin function-center(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+}
+
+@mixin function-between(){
+  align-items: center;
+  justify-content: space-between;
+  width: max-content;
+  height: max-content;
+}
+
+@mixin function-horizontal(){
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  height: max-content;
+  max-width: 100%;
+}
+
+@mixin function-vertical(){
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}

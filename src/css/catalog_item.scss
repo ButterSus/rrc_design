@@ -1,0 +1,210 @@
+@import "functions";
+@import "fonts";
+@import "colors";
+
+body {
+  .header {
+    @include function-size(100%, 90px);
+    @include color-dark-glass-bg;
+
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 4px 4px rgba(#000000, 25%);
+  }
+
+  .introduction-ocean {
+    @include function-center;
+    @include function-size(100%, 1080px);
+    background-image: url("assets/catalog-item/background-ocean.png");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+
+    .item_of_catalog {
+      @include function-vertical;
+      @include function-size(1220px, auto);
+
+      .text {
+        @include function-vertical;
+        @include color-contrast-bg;
+
+        padding-top: 20px;
+        padding-bottom: 24px;
+
+        .title {
+          @include function-horizontal;
+          @include font-firm-title-medium;
+          @include color-white;
+
+          display: flex;
+          margin-left: 32px;
+          margin-right: 32px;
+        }
+
+        .content {
+          @include function-horizontal;
+          @include font-firm-text-medium-little;
+          @include color-white;
+
+          display: flex;
+          margin-top: 11px;
+          margin-left: 32px;
+          margin-right: 32px;
+        }
+      }
+
+      .demonstration {
+        @include function-between;
+        @include function-horizontal;
+        @include function-size(100%, 450px);
+
+        margin-top: 40px;
+
+        .picture {
+          @include function-center;
+          @include function-size(735px, 100%);
+          @include color-contrast-bg;
+        }
+
+        .information {
+          @include function-vertical;
+          @include function-between;
+          @include function-size(425px, 100%);
+          @include color-contrast-bg;
+
+          .info-block {
+            @include font-firm-text-medium-little;
+            @include color-white;
+
+            margin-top: 40px;
+            margin-left: 32px;
+          }
+
+          .buttons {
+            @include function-horizontal;
+
+            margin-bottom: 40px;
+
+            .download {
+              @include function-center;
+              @include function-horizontal;
+              @include function-size(200px, 50px);
+              @include font-firm-text-medium;
+              @include color-white;
+              @include color-firm-bg;
+
+              img {
+                margin-left: 12px;
+              }
+
+              //border-top: #FF7171 5px;
+              //border-bottom: #A14A4A 5px;
+            }
+
+            .tag-favourite {
+              @include function-center;
+              @include function-size(50px, 50px);
+              @include color-firm-bg;
+
+              margin-left: 16px;
+            }
+
+            .edit {
+              @include function-center;
+              @include function-size(50px, 50px);
+              @include color-contrast-bg;
+
+              margin-left: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .description-footer {
+    @include function-center;
+    @include function-size(100%, 362px);
+    @include color-black-bg;
+
+    .center {
+      @include function-vertical;
+      @include function-between;
+      @include function-size(1220px, 100%);
+
+      .description {
+        @include function-size(100%, auto);
+        @include font-default-middle;
+        @include color-white;
+
+        margin-top: 60px;
+      }
+
+      .information {
+        @include function-vertical;
+        @include function-size(100%, max-content);
+        @include font-firm-logos-medium;
+        @include color-white;
+
+        margin-bottom: 48px;
+
+        .tags {
+          @include function-horizontal;
+
+          height: 50px;
+          margin-top: 40px;
+
+          .Tag, .Tag_Button {
+            @include function-horizontal;
+            @include font-default-middle-little;
+
+            align-items: center;
+            height: 100%;
+            padding-left: 8px;
+            padding-right: 8px;
+            border: white solid 1px;
+            margin-right: 20px;
+          }
+
+          .Tag_Button {
+            @include color-white-glass;
+          }
+        }
+      }
+    }
+  }
+
+  .references {
+    @include function-center;
+    @include function-size(100%, 1450px);
+    @include color-dark-bg;
+
+    .center {
+      @include function-horizontal;
+      @include function-size(1220px, 100%);
+
+      overflow: clip;
+
+      .title {
+        @include function-center;
+        @include function-size(100%, 250px);
+        @include font-firm-title-big;
+        @include color-white;
+      }
+
+      .items {
+
+      }
+    }
+  }
+
+  .footer {
+    @include function-size(100%, 160px);
+    @include color-black-bg;
+
+    position: absolute;
+  }
+}
+
+
+

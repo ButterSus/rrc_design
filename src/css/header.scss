@@ -1,0 +1,41 @@
+@import "functions";
+@import "fonts";
+@import "colors";
+
+.header {
+  @include function-size(100%, 90px);
+  @include color-dark-glass-bg;
+
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 4px 4px rgba(#000000, 25%);
+
+  .language_switch {
+    @include function-center;
+    @include function-size(92px, 100%);
+
+    .center {
+      @include function-vertical;
+      @include font-firm-text-medium-little;
+      @include color-white;
+
+      align-items: center;
+    }
+  }
+
+  .center {
+    @include function-center;
+    @include function-size(auto, auto);
+    margin-top: 15px;
+
+    .content {
+      @include function-horizontal;
+
+      .logo {
+        @include function-size(auto, 60px);
+      }
+    }
+  }
+}
+
+

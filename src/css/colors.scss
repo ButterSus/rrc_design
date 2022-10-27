@@ -1,0 +1,27 @@
+@mixin color-white(){
+  color: white;
+}
+
+@mixin color-white-glass(){
+  color: rgba(#FFFFFF, 45%);
+}
+
+@mixin color-dark-glass-bg(){
+  background-color: rgba(#413F5A, 20%);
+}
+
+@mixin color-contrast-bg(){
+  background-color: rgba(#242736, 75%);
+}
+
+@mixin color-firm-bg(){
+  background-color: #F35656;
+}
+
+@mixin color-black-bg(){
+  background-color: #161621;
+}
+
+@mixin color-dark-bg(){
+  background-color: #212129;
+}

@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Minecraft Ten", Serif;
+  src: url("fonts/Minecraft-Ten.ttf");
+}
+@font-face {
+  font-family: "Monocraft", Serif;
+  src: url("fonts/Monocraft.otf");
+}
+@font-face {
+  font-family: "Rubik", Serif;
+  src: url("fonts/Rubik.ttf");
+}
+.header {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  background-color: rgba(65, 63, 90, 0.2);
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header .language_switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+  display: flex;
+  width: 92px;
+  height: 100%;
+}
+.header .language_switch .center {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  font-family: "Monocraft";
+  font-size: 18px;
+  color: white;
+  align-items: center;
+}
+.header .center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-top: 15px;
+}
+.header .center .content {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  height: max-content;
+  max-width: 100%;
+}
+.header .center .content .logo {
+  display: flex;
+  width: auto;
+  height: 60px;
+}
+
+/*# sourceMappingURL=header.css.map */

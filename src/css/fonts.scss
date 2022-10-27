@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Minecraft Ten", Serif;
+  src: url("fonts/Minecraft-Ten.ttf");
+}
+
+@font-face {
+  font-family: "Monocraft", Serif;
+  src: url("fonts/Monocraft.otf");
+}
+
+@font-face {
+  font-family: "Rubik", Serif;
+  src: url("fonts/Rubik.ttf");
+}
+
+@mixin font-default-middle(){
+  font-family: "Rubik";
+  font-size: 20px;
+}
+
+@mixin font-default-middle-little(){
+  font-family: "Rubik";
+  font-size: 16px;
+}
+
+@mixin font-firm-title-big(){
+  font-family: "Minecraft Ten";
+  font-size: 64px;
+}
+
+@mixin font-firm-title-medium(){
+  font-family: "Minecraft Ten";
+  font-size: 48px;
+}
+
+@mixin font-firm-text-medium(){
+  font-family: "Monocraft";
+  font-size: 24px;
+}
+
+@mixin font-firm-text-medium-little(){
+  font-family: "Monocraft";
+  font-size: 18px;
+}
+
+@mixin font-firm-logos-medium(){
+  font-family: "Minecraft Ten";
+  font-size: 32px;
+}
